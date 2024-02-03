@@ -4,35 +4,46 @@ import java.util.Scanner;
 //import java.io.*;
 
 public class Qsn3 {
-    public static void main(String[] args) {
-        Scanner kb = new Scanner(System.in);
-        // Declaring array literal
-       // int[] intArray = new int[]{175, 167, 160, 183, 187, 188, 179, 176, 175, 169,
-      // 175, 176, 178, 165, 160, 173, 165, 187, 178};
-        int sz, mks[];
-        pr("\nEnter no of students :   ");
 
+    static class IntVar {
+        int val;
 
-        sz = 20;
-        mks = new int[]{175, 167, 160, 164, 183, 187, 188, 179, 176, 175,
-                169, 175, 176, 178, 165, 160, 173, 165, 187, 178};
-        //  sz = kb.nextInt();
-        //  mks = new int[sz];
-        //  getStudMarks(mks, sz);
-        sortArray(mks, sz);
-        prMarks(mks, sz);
-        pr("\n");
-        int[] mks2 = new int[sz];
-        int[] freq = new int[sz];
-        countMksFreq(mks, mks2, freq, sz);
-        pr("\n");
-      //  prMarks(mks2, sz);
-        pr("\n");
-        //prMarks(freq, sz);
-        prTable(mks2, freq, sz);
+        void set(int v) {
+            val = v;
+        }
+
+        int get() {
+            return val;
+        }
     }
 
-    static void countMksFreq(int[] arr, int[] arr2, int[] freq, int sz) {
+    public static void main(String[] args) {
+        Scanner kb = new Scanner(System.in);
+        IntVar iVar = new IntVar();
+        int sz, mks[];
+        double avg = 0;
+        pr("\nEnter no of students :   ");
+        sz = kb.nextInt();
+        mks = new int[sz];
+        //  sz = 20;
+        //   mks = new int[]{175, 167, 160, 164, 183, 187, 188, 179, 176, 175,
+        //           169, 175, 176, 178, 165, 160, 173, 165, 187, 178};
+        getStudMarks(mks, sz);
+        // pr("\nStudent total marks : " + iVar.get() + "\n");
+        //  iVar.set(sz);
+        sortArray(mks, sz, iVar);
+        avg = (iVar.get() * 1.0) / sz;
+        prMarks(mks, sz);
+        pr("\nAverage : " + avg);
+        int[] mks2 = new int[sz];
+        int[] freq = new int[sz];
+        countMksFreq(mks, mks2, freq, sz, iVar);
+        pr("\n");
+        //prMarks(freq, sz);
+        prTable(mks2, freq, iVar.get(), avg);
+    }
+
+    static void countMksFreq(int[] arr, int[] arr2, int[] freq, int sz, IntVar iv) {
         int cnt, k;
         k = 0;
         for (int i = 0; i < sz; i++) {
@@ -44,27 +55,33 @@ public class Qsn3 {
                     i++;
                 }
             }
-          //  pr("\nAt indx : " + indx + " Count : " + cnt);
+            //  pr("\nAt indx : " + indx + " Count : " + cnt);
             arr2[k] = arr[indx];
             freq[k] = cnt;
             k++;
         }
+        iv.set(k);
     }
 
-    static void sortArray(int[] arr, int sz) {
+    static void sortArray(int[] mks, int sz, IntVar iv) {
+        int sum = 0;
+        sum += mks[sz - 1];
         for (int i = 0; i < sz - 1; i++) {
             int indx = i;
+            sum += mks[i];
             for (int j = i + 1; j < sz; j++) {
-                if (arr[indx] > arr[j])
+                if (mks[indx] > mks[j])
                     indx = j;
             }
             if (indx != i) {
                 int temp;
-                temp = arr[indx];
-                arr[indx] = arr[i];
-                arr[i] = temp;
+                temp = mks[indx];
+                mks[indx] = mks[i];
+                mks[i] = temp;
             }
         }
+        //  pr("\nSum total : " + sum);
+        iv.set(sum);
     }
 
     static void getStudMarks(int[] mks, int sz) {
@@ -73,6 +90,7 @@ public class Qsn3 {
             pr("\nEnter marks of stud " + (i + 1) + " :   ");
             mks[i] = kb.nextInt();
         }
+
     }
 
     static int getMarksTotal(int[] mks, int sz) {
@@ -84,14 +102,16 @@ public class Qsn3 {
         return tot;
     }
 
-    static void prTable(int[] mks, int[] freq, int sz) {
+    static void prTable(int[] mks, int[] freq, int sz, double avg) {
         pr("\nHeight \t\t Number of Students\n");
         for (int i = 0; i < sz; i++) {
-            if(freq[i] !=0) {
-                pr(mks[i] + "\t\t\t\t" + freq[i] + "\n");
-            }
+            //  if(freq[i] !=0) {
+            pr(mks[i] + "\t\t\t\t" + freq[i] + "\n");
+            //  }
         }
+        pr("\nAverage height :  " + avg);
     }
+
     static void prMarks(int[] mks, int sz) {
         for (int i = 0; i < sz; i++) {
             pr(" " + mks[i] + " ");
