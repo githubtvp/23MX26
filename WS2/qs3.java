@@ -10,11 +10,16 @@ public class qs3 {
         pr("\nInt n2 : " + n2);
         n3 = getInt(args[2]);
         pr("\nInt n3 : " + n3);
+        comp(n1,n2,n3);
     }
 
     static void comp(int n1, int n2, int n3)
     {
-        
+            if(n1 == n2 && n1 == 3)
+                pr("\nThey are equal");
+            else {
+                pr("\nNot equal");
+            }
     }
     static int getInt(String str)
     {
