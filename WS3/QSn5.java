@@ -18,12 +18,12 @@ public class QSn5 {
         rptedNos[] rptdNoArr = new rptedNos[sz];
         int noOfRptEls = buildRptdElsArr(sArr, sz, rptdNoArr);
         int toPrnArr[] = new int[noOfRptEls];
-        buildTpPrnArr(arr, sz,  rptdNoArr, noOfRptEls, toPrnArr);
+        buildToPrnArr(arr, sz,  rptdNoArr, noOfRptEls, toPrnArr);
         prArr(toPrnArr, noOfRptEls);
         kb.close();
     }
 
-    static void buildTpPrnArr(int[] arr, int sz,  rptedNos[] rptNos, int nRptEls, int[] toPrn)
+    static void buildToPrnArr(int[] arr, int sz,  rptedNos[] rptNos, int nRptEls, int[] toPrn)
     {
         int i = 0;
         int k = 0;
