@@ -5,7 +5,7 @@ public class qs1 {
     public static void main(String[] args) {
         Scanner kb = new Scanner(System.in);
         int n;
-        pr("\nEnter a number : ");
+        pr("\nEnter a number between 0 and 9: ");
         n = kb.nextInt();
         prIf(n);
         //  prSw(n);

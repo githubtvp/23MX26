@@ -90,7 +90,7 @@ public class Qsn3 {
             pr("\nEnter marks of stud " + (i + 1) + " :   ");
             mks[i] = kb.nextInt();
         }
-
+        kb.close();
     }
 
     static int getMarksTotal(int[] mks, int sz) {
