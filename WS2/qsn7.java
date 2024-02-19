@@ -17,7 +17,7 @@ public class qsn7 {
          Scanner kb = new Scanner(System.in);
             int sz = 10;
             int q, p;
-            QandR[] arr= new QandR[sz];
+            ArrayList<QandR> arr= new ArrayList<QandR>();
            pr("\nEnter q value : ");
            q = kb.nextInt();
            pr("\nEnter p value : ");
@@ -26,36 +26,44 @@ public class qsn7 {
            int q1 = q/p;
            int r1 = q%p;
            QandR pr = new QandR(q1,r1);
-           arr[0] = pr;
-            pr("\nQarr : " + arr[0].getQ() + " Rarr : " + arr[0].getR());
+            arr.add(pr);
+          //  pr("\nOutside While oth element : Qarr : " + arr.get(0).getQ() + " Rarr : " + arr.get(0).getR());
+          //  pr("\nArr length : " + arr.size());
             q = 10*r1;
            boolean notFound = true;
            while(notFound)
            {
                q1 = q/p;
                r1 = q%p;
-               notFound = appendArr(q1, r1, arr, arr.length);
+               notFound = appendArr(q1, r1, arr, arr.size());
                if(notFound)
                {
                    q = 10*r1;
                }
            }
-       //     pr("Compiled!");
+           pr("0.(");
+            for(int i = 0; i <arr.size(); i++) {
+                 pr("" + arr.get(i).getQ());
+                }
+            pr(")");
+         //   pr("\nCompiled!");
     }
-    static boolean appendArr(int q, int r, QandR[] qr, int sz)
+    static boolean appendArr(int q, int r, ArrayList<QandR> qr1, int sz)
     {
-        QandR pr = new QandR(q,r);
+       // pr("\nAppendArr : Qarr : " + qr1.get(0).getQ() + " Rarr : " + qr1.get(0).getR());
+        QandR qr2 = new QandR(q,r);
+        boolean notFound = true;
         for(int i = 0; i < sz; i++) {
-            if (pr.getQ() == qr[i].getQ() && pr.getR() == qr[i].getR()) {
-                return false;
+            if ( (qr2.getQ() == qr1.get(i).getQ() ) &&  (qr2.getR() == qr1.get(i).getR()) ){
+                notFound = false;
             }
         }
-        qr[sz] = pr;
-        return true;
+        qr1.add(qr2);
+        return notFound;
     }
 
     static void pr(String msg)
     {
-        System.out.println(msg);
+        System.out.print(msg);
     }
 }
