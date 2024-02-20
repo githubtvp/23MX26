@@ -1,8 +1,6 @@
-import java.util.*;
 import java.util.Scanner;
-import java.util.Random;
 
-public class Main {
+public class LabQsn2 {
      public static void main(String[] args)
     {
         Scanner kb = new Scanner((System.in));
