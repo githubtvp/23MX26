@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/PracTest25Mar/PracTest25Mar.iml" filepath="$PROJECT_DIR$/PracTest25Mar/PracTest25Mar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/WS8.iml" filepath="$PROJECT_DIR$/.idea/WS8.iml" />
+    </modules>
+  </component>
+</project>
