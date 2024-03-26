@@ -1,4 +1,5 @@
 import java.util.*;
+import java.io.*;
 class BloodPressure{
     private int upper;
     private int lower;
@@ -61,8 +62,6 @@ class Patient extends BloodPressure{
     }
 }
 
-//public enum bp ("Normal", "Elevated" )
-
 public class Main {
 
     public static void main(String[] args)
@@ -105,6 +104,7 @@ public class Main {
     }
     static void pr()
     {
-        pr("\n");
+       // pr("\n");
+        System.out.println();
     }
 }
