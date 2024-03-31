@@ -70,7 +70,7 @@ public class Main {
         String name;
         int upper; int lower;
         pr("\nEnter name : ");
-        name = kb.next();
+        name = kb.nextLine();
         pr("\nEnter value of Upper : ");
         upper = kb.nextInt();
         pr("\nEnter value of lower : ");
