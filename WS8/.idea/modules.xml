@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/InheritancePrac/InheritancePrac.iml" filepath="$PROJECT_DIR$/InheritancePrac/InheritancePrac.iml" />
-      <module fileurl="file://$PROJECT_DIR$/PolymorphismPrac/PolymorphismPrac.iml" filepath="$PROJECT_DIR$/PolymorphismPrac/PolymorphismPrac.iml" />
       <module fileurl="file://$PROJECT_DIR$/PracTest25Mar/PracTest25Mar.iml" filepath="$PROJECT_DIR$/PracTest25Mar/PracTest25Mar.iml" />
-      <module fileurl="file://$PROJECT_DIR$/PracTest25Mar/StudFeedBack/StudFeedBack.iml" filepath="$PROJECT_DIR$/PracTest25Mar/StudFeedBack/StudFeedBack.iml" />
-      <module fileurl="file://$PROJECT_DIR$/TestClassShortCuts/TestClassShortCuts.iml" filepath="$PROJECT_DIR$/TestClassShortCuts/TestClassShortCuts.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TestClass/TestClass.iml" filepath="$PROJECT_DIR$/TestClass/TestClass.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/WS8.iml" filepath="$PROJECT_DIR$/.idea/WS8.iml" />
     </modules>
   </component>
