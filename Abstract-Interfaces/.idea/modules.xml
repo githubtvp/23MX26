@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Abstract-Interfaces.iml" filepath="$PROJECT_DIR$/.idea/Abstract-Interfaces.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AllRounder/AllRounder.iml" filepath="$PROJECT_DIR$/AllRounder/AllRounder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Bank/Bank.iml" filepath="$PROJECT_DIR$/Bank/Bank.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Bikes/Bikes.iml" filepath="$PROJECT_DIR$/Bikes/Bikes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Paladin-Job/Paladin-Job.iml" filepath="$PROJECT_DIR$/Paladin-Job/Paladin-Job.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Person-Employee/Person-Employee.iml" filepath="$PROJECT_DIR$/Person-Employee/Person-Employee.iml" />
+    </modules>
+  </component>
+</project>
