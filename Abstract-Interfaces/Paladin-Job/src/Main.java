@@ -1,5 +1,6 @@
+import java.util.ArrayList;
 
-public class Paladin extends AbstractJob {
+class Paladin extends AbstractJob {
     private double modifier = 1.6;
     @Override
     double getJobModifier()
@@ -9,13 +10,13 @@ public class Paladin extends AbstractJob {
 
     public Paladin(String name)
     {
-        super(name);
+        super.name = name;
     }
 }
 
 abstract class AbstractJob {
     protected String name;
-    protected ArrayList<Item> inventory = new ArrayList<>();
+    protected ArrayList<T> inventory = new ArrayList<T>();
     private int armor;
     private int attack;
 
