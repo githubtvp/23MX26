@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/HWPactTest2/HWPactTest2.iml" filepath="$PROJECT_DIR$/HWPactTest2/HWPactTest2.iml" />
       <module fileurl="file://$PROJECT_DIR$/InheritancePrac/InheritancePrac.iml" filepath="$PROJECT_DIR$/InheritancePrac/InheritancePrac.iml" />
       <module fileurl="file://$PROJECT_DIR$/PolymorphismPrac/PolymorphismPrac.iml" filepath="$PROJECT_DIR$/PolymorphismPrac/PolymorphismPrac.iml" />
@@ -9,6 +10,10 @@
       <module fileurl="file://$PROJECT_DIR$/PracticeExceptionQsn1/PracticeExceptionQsn1.iml" filepath="$PROJECT_DIR$/PracticeExceptionQsn1/PracticeExceptionQsn1.iml" />
       <module fileurl="file://$PROJECT_DIR$/PracTest25Mar/StudFeedBack/StudFeedBack.iml" filepath="$PROJECT_DIR$/PracTest25Mar/StudFeedBack/StudFeedBack.iml" />
       <module fileurl="file://$PROJECT_DIR$/TestClassShortCuts/TestClassShortCuts.iml" filepath="$PROJECT_DIR$/TestClassShortCuts/TestClassShortCuts.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/PracTest25Mar/PracTest25Mar.iml" filepath="$PROJECT_DIR$/PracTest25Mar/PracTest25Mar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TestClass/TestClass.iml" filepath="$PROJECT_DIR$/TestClass/TestClass.iml" />
+>>>>>>> 9032213ab393403c03c202860ed4193f8a4d2369
       <module fileurl="file://$PROJECT_DIR$/.idea/WS8.iml" filepath="$PROJECT_DIR$/.idea/WS8.iml" />
     </modules>
   </component>
