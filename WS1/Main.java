@@ -12,10 +12,8 @@ interface Batsman extends Player{
     float average = 34.89f;
     public void display();
 }
-
 interface Bowler extends Player{
     //int noOfWickets = 0;
-
 
     public void setWickets(int wickets);
 
@@ -31,16 +29,13 @@ interface Bowler extends Player{
 
 class AllRounder implements Batsman, Bowler {
     int noOfWickets = 0;
-
     public void display() {
         System.out.println("Name :" + this.Name);
         System.out.println("Matches :" + this.Matches);
         System.out.println("Total Score :" + this.totalScore);
         System.out.println("Per Match Score :" + Arrays.toString(perMatchScore));
         System.out.println("Average Score :" + this.average);
-
         System.out.println("Number of wickets :" + this.noOfWickets);
-
         //Bowler.super.display();
     }
 
