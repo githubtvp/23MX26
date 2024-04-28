@@ -1,12 +1,9 @@
-
+import java.lang.*;
 
 interface AdvancedArithmetic{
-
     int divisor_sum(int n);
 }
-
 class MyCalculator implements AdvancedArithmetic{
-
     int sum = 0;
         @Override
         public int divisor_sum(int n)
@@ -25,8 +22,6 @@ class MyCalculator implements AdvancedArithmetic{
     public MyCalculator() {
     }
 }
-
-
 
 public class Main {
     public static void main(String[] args)
