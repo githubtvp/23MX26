@@ -33,8 +33,6 @@ public class Main {
         System.out.println(mytruck); //vroomvroom
         mytruck.m1();//truck1
         mytruck.m2();// car1
-
-
     }
 }
 

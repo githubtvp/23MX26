@@ -52,6 +52,4 @@ public class Main {
         mt.m2();
         System.out.println(mt);
     }
-
-
 }

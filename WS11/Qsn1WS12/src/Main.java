@@ -78,7 +78,8 @@ public class Main {
     }
     private static void writeToFile() {
         Scanner kb = new Scanner(System.in);
-        String outputFile = "output.txt";
+       // String outputFile = "output.txt";
+        File outputFile = new File ("output.txt");
         String name;
         double price = 0.0;
         double priceToFill = 0.0;
@@ -124,13 +125,14 @@ public class Main {
     }
 
     private static void readFile() {
-        String inputFile = "output.txt";
+      //  String inputFile = "output.txt";
+        File inputFile = new File ("output.txt");
 //        String name;
 //        double price = 0.0;
 //        double priceToFill = 0.0;
 //        int initialKm = 0;
 //        int finalKm = 0;
-  //   BuffereReader rdr = new BuffereRedaer(new FileReader(inputFile));
+  //   BufferReader rdr = new BufferReader(new FileReader(inputFile));
           
         try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(inputFile))) {
             Object obj;
